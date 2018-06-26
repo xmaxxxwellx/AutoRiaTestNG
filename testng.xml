@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="Tests">
+    <test name="AllTests">
+        <parameter name="baseURL" value="https://auto.ria.com"/>
+        <parameter name="driverPass" value="\drivers\chromedriver.exe"/>
+        <parameter name="pageWaitTimeout" value="12"/>
+        <packages>
+            <package name="com.epam.maxxxwell.test.*"/>
+        </packages>
+    </test>
+</suite>
