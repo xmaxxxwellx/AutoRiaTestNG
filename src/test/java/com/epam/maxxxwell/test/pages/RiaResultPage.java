@@ -1,7 +1,6 @@
 package com.epam.maxxxwell.test.pages;
 
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
@@ -9,8 +8,9 @@ import org.openqa.selenium.support.ui.Select;
 
 import java.util.List;
 
+import static com.epam.maxxxwell.test.WebDriverContainer.getDriver;
+
 public class RiaResultPage {
-    private WebDriver driver;
 
     @FindBy(xpath = "//div[@class = 'container-header']/a[@class = 'logo']")
     private WebElement mainLogo;
@@ -27,9 +27,8 @@ public class RiaResultPage {
     @FindBy(id = "staticResultsCount")
     private WebElement resultsCount;
 
-    public RiaResultPage(WebDriver driver) {
-        this.driver = driver;
-        PageFactory.initElements(driver, this);
+    public RiaResultPage() {
+        PageFactory.initElements(getDriver(), this);
     }
 
     public int getCategoryNumber() {
@@ -44,13 +43,13 @@ public class RiaResultPage {
 
     public RiaHomePage mainLogoClick() {
         mainLogo.click();
-        return PageFactory.initElements(driver, RiaHomePage.class);
+        return new RiaHomePage();
     }
 
     public RiaProductPage openFirstResultLink(){
         firstResultLink.click();
 
-        return PageFactory.initElements(driver, RiaProductPage.class);
+        return new RiaProductPage();
     }
 
     public boolean regionMatching(String region){

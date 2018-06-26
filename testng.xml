@@ -5,7 +5,6 @@
     <test name="AllTests">
         <parameter name="baseURL" value="https://auto.ria.com"/>
         <parameter name="driverPass" value="\drivers\chromedriver.exe"/>
-        <parameter name="pageWaitTimeout" value="12"/>
         <packages>
             <package name="com.epam.maxxxwell.test.*"/>
         </packages>

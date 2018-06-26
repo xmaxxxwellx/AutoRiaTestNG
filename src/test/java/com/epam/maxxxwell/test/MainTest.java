@@ -6,6 +6,8 @@ import org.testng.annotations.Test;
 import com.epam.maxxxwell.test.pages.*;
 import com.epam.maxxxwell.test.utils.*;
 
+import static com.epam.maxxxwell.test.WebDriverContainer.getDriver;
+
 public class MainTest extends ConfigTest {
 
     private static final int CATEGORY_NUMBER = 4;
@@ -22,7 +24,7 @@ public class MainTest extends ConfigTest {
     public void categorySelection(){
         Log.startTestCase("categorySelection");
 
-        RiaHomePage riaHomePage = new RiaHomePage(driver);
+        RiaHomePage riaHomePage = new RiaHomePage();
         RiaResultPage riaResultPage = riaHomePage.getResultPageByCategory(CATEGORY_NUMBER);
 
         Assert.assertEquals(riaResultPage.getCategoryNumber(), CATEGORY_NUMBER,
@@ -33,7 +35,7 @@ public class MainTest extends ConfigTest {
 
     @Test
     public void returnToMainPageUsingLogo(){
-        RiaHomePage riaHomePage = new RiaHomePage(driver);
+        RiaHomePage riaHomePage = new RiaHomePage();
         RiaResultPage riaResultPage = riaHomePage.getDefaultResultPage();
 
         riaHomePage = riaResultPage.mainLogoClick();
@@ -45,7 +47,7 @@ public class MainTest extends ConfigTest {
 
     @Test
     public void productOfChosenCategory() {
-        RiaHomePage riaHomePage = new RiaHomePage(driver);
+        RiaHomePage riaHomePage = new RiaHomePage();
         RiaResultPage riaResultPage = riaHomePage.getResultPageByCategory(CATEGORY_NUMBER);
 
         String resultPageCategoryName = riaResultPage.getCategoryName().trim();
@@ -59,7 +61,7 @@ public class MainTest extends ConfigTest {
 
     @Test
     public void regionSelection(){
-        RiaHomePage riaHomePage = new RiaHomePage(driver);
+        RiaHomePage riaHomePage = new RiaHomePage();
         RiaResultPage riaResultPage = riaHomePage.getResultPageByRegion(REGION_NAME);
 
         Assert.assertTrue(riaResultPage.regionMatching(REGION_NAME),
@@ -68,7 +70,7 @@ public class MainTest extends ConfigTest {
 
     @Test
     public void checkingBrandCategorySelection(){
-        RiaHomePage riaHomePage = new RiaHomePage(driver);
+        RiaHomePage riaHomePage = new RiaHomePage();
         RiaBrandPage riaBrandPage = riaHomePage.getResultByBrand(BRAND);
         RiaProductPage riaProductPage = riaBrandPage.getProductByLinkNumber(PRODUCT_LINK_NUMBER);
 
@@ -78,7 +80,7 @@ public class MainTest extends ConfigTest {
 
     @Test
     public void findProductByPrice() {
-        RiaHomePage riaHomePage = new RiaHomePage(driver);
+        RiaHomePage riaHomePage = new RiaHomePage();
         RiaResultPage riaResultPage = riaHomePage.getResultPageByPrice(SMALLER_PRICE, BIGGER_PRICE);
         RiaProductPage riaProductPage = riaResultPage.openFirstResultLink();
 
@@ -89,7 +91,7 @@ public class MainTest extends ConfigTest {
 
     @Test
     public void wrongRangeOfPriceCheck(){
-        RiaHomePage riaHomePage = new RiaHomePage(driver);
+        RiaHomePage riaHomePage = new RiaHomePage();
         RiaResultPage riaResultPage = riaHomePage.getResultPageByPrice(BIGGER_PRICE, SMALLER_PRICE);
 
         Assert.assertEquals(riaResultPage.getResultsCount(), 0);
@@ -97,7 +99,7 @@ public class MainTest extends ConfigTest {
 
     @Test
     public void findProductByYear() {
-        RiaHomePage riaHomePage = new RiaHomePage(driver);
+        RiaHomePage riaHomePage = new RiaHomePage();
         RiaResultPage riaResultPage = riaHomePage.getResultPageByYear(EARLIER_YEAR, LATER_YEAR);
         RiaProductPage riaProductPage = riaResultPage.openFirstResultLink();
 
@@ -109,7 +111,7 @@ public class MainTest extends ConfigTest {
     @Flaky
     @Test
     public void wrongRangeOfYearCheck(){
-        RiaHomePage riaHomePage = new RiaHomePage(driver);
+        RiaHomePage riaHomePage = new RiaHomePage();
         RiaResultPage riaResultPage = riaHomePage.getResultPageByYear(LATER_YEAR, EARLIER_YEAR);
 
         Assert.assertEquals(riaResultPage.getResultsCount(), 0);
@@ -119,15 +121,15 @@ public class MainTest extends ConfigTest {
     public void testingMaxPrice() {
         Log.startTestCase("testingMaxPrice");
 
-        RiaHomePage riaHomePage = new RiaHomePage(driver);
+        RiaHomePage riaHomePage = new RiaHomePage();
         riaHomePage.getResultPageByPrice(MAX_PRICE_VALUE);
 
-        Tools.waitPageToLoad(driver, 30);
+        Tools.waitPageToLoad(getDriver(), 30);
 
         String testName = new Object() { }.getClass()
                 .getEnclosingMethod()
                 .getName();
-        Tools.makeScreenshot(driver, testName);
+        Tools.makeScreenshot(getDriver(), testName);
 
         Log.endTestCase("testingMaxPrice");
     }

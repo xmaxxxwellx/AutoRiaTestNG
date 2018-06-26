@@ -1,8 +1,6 @@
 package com.epam.maxxxwell.test.pages;
 
-
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Action;
 import org.openqa.selenium.interactions.Actions;
@@ -11,15 +9,12 @@ import org.openqa.selenium.support.PageFactory;
 
 import java.util.List;
 
-public class RiaHomePage {
+import static com.epam.maxxxwell.test.WebDriverContainer.getDriver;
 
-    private WebDriver driver;
+public class RiaHomePage {
 
     @FindBy (xpath = "//form[@id = 'mainSearchForm']/div[@class = 'footer-form']/button[@class = 'button']")
     private WebElement searchButton;
-
-//    @FindBy (xpath = "//div[@id = 'header']/header[1]/div[1]/div/div/a[2]")
-//    private WebElement loginLink;
 
     @FindBy (id = "categories")
     private WebElement categoriesDropDownList;
@@ -48,23 +43,22 @@ public class RiaHomePage {
     @FindBy (id = "yearTo")
     private WebElement yearToDropDownList;
 
-    public RiaHomePage(WebDriver driver){
-        this.driver = driver;
-        PageFactory.initElements(driver, this);
+    public RiaHomePage(){
+        PageFactory.initElements(getDriver(), this);
     }
 
     public String getTitle() {
-        return driver.getTitle();
+        return getDriver().getTitle();
     }
 
     public RiaResultPage getDefaultResultPage(){
         searchButton.submit();
-        return PageFactory.initElements(driver, RiaResultPage.class);
+        return new RiaResultPage();
     }
 
     public RiaResultPage getResultPageByCategory(int categoryNumber){
         // Start actions
-        Actions builder = new Actions(driver);
+        Actions builder = new Actions(getDriver());
         builder.click(categoriesDropDownList);
         for (WebElement item : categoriesItems) {
             if(categoryNumber == Integer.parseInt(item.getAttribute("value"))) {
@@ -79,14 +73,14 @@ public class RiaHomePage {
 
         searchButton.submit();
 
-        return PageFactory.initElements(driver, RiaResultPage.class);
+        return new RiaResultPage();
     }
 
     public RiaResultPage getResultPageByRegion(String region){
         regionsDropDownList.click();
         for (WebElement item : regionsItems) {
             if(region.equals(item.getAttribute("innerHTML"))) {
-                Actions builder = new Actions(driver);
+                Actions builder = new Actions(getDriver());
                 builder.moveToElement(item);
                 builder.click(item);
                 builder.build().perform();
@@ -95,7 +89,7 @@ public class RiaHomePage {
         }
         searchButton.submit();
 
-        return PageFactory.initElements(driver, RiaResultPage.class);
+        return new RiaResultPage();
     }
 
     public RiaBrandPage getResultByBrand(String brand){
@@ -106,7 +100,7 @@ public class RiaHomePage {
             }
         }
 
-        return PageFactory.initElements(driver, RiaBrandPage.class);
+        return new RiaBrandPage();
     }
 
     public RiaResultPage getResultPageByPrice(int priceFrom, int priceTo){
@@ -114,18 +108,19 @@ public class RiaHomePage {
         priceToInput.sendKeys(String.valueOf(priceTo));
         searchButton.submit();
 
-        return PageFactory.initElements(driver, RiaResultPage.class);
+        return new RiaResultPage();
     }
+
     public RiaResultPage getResultPageByPrice(String price){
         //priceFromInput.sendKeys(price);
         priceFromInput.click();
-        new Actions(driver).sendKeys(price).perform();
+        new Actions(getDriver()).sendKeys(price).perform();
         //priceToInput.sendKeys(price);
         priceToInput.click();
-        new Actions(driver).sendKeys(price).perform();
+        new Actions(getDriver()).sendKeys(price).perform();
         searchButton.submit();
 
-        return PageFactory.initElements(driver, RiaResultPage.class);
+        return new RiaResultPage();
     }
 
     public RiaResultPage getResultPageByYear(int yearFrom, int yearTo){
@@ -148,11 +143,6 @@ public class RiaHomePage {
         }
         searchButton.submit();
 
-        return PageFactory.initElements(driver, RiaResultPage.class);
+        return new RiaResultPage();
     }
-
-//    public RiaLoginPage getToLoginPage(){
-//        loginLink.click();
-//        return PageFactory.initElements(driver, RiaLoginPage.class);
-//    }
 }

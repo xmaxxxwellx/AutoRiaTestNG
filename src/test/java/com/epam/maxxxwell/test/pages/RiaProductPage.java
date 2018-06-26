@@ -1,12 +1,12 @@
 package com.epam.maxxxwell.test.pages;
 
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
+import static com.epam.maxxxwell.test.WebDriverContainer.getDriver;
+
 public class RiaProductPage {
-    private WebDriver driver;
 
     @FindBy(xpath = "//div[@id = 'heading-cars']/div[@class = 'heading']/h1")
     WebElement productTitle;
@@ -20,9 +20,8 @@ public class RiaProductPage {
     @FindBy(xpath = "//div[@id = 'showLeftBarView']/div/div[@class = 'price-seller']/span")
     private WebElement productPrice;
 
-    public RiaProductPage(WebDriver driver){
-        this.driver = driver;
-        PageFactory.initElements(driver, this);
+    public RiaProductPage(){
+        PageFactory.initElements(getDriver(), this);
     }
 
     public String getProductDescriptionText(){
