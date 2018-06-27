@@ -22,15 +22,11 @@ public class MainTest extends ConfigTest {
 
     @Test
     public void categorySelection(){
-        Log.startTestCase("categorySelection");
-
         RiaHomePage riaHomePage = new RiaHomePage();
         RiaResultPage riaResultPage = riaHomePage.getResultPageByCategory(CATEGORY_NUMBER);
 
         Assert.assertEquals(riaResultPage.getCategoryNumber(), CATEGORY_NUMBER,
                 "Result page does not match selected category: " + CATEGORY_NUMBER);
-
-        Log.endTestCase("categorySelection");
     }
 
     @Test
@@ -119,8 +115,6 @@ public class MainTest extends ConfigTest {
 
     @Test
     public void testingMaxPrice() {
-        Log.startTestCase("testingMaxPrice");
-
         RiaHomePage riaHomePage = new RiaHomePage();
         riaHomePage.getResultPageByPrice(MAX_PRICE_VALUE);
 
@@ -130,7 +124,5 @@ public class MainTest extends ConfigTest {
                 .getEnclosingMethod()
                 .getName();
         Tools.makeScreenshot(getDriver(), testName);
-
-        Log.endTestCase("testingMaxPrice");
     }
 }
