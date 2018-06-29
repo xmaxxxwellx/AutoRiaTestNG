@@ -112,12 +112,12 @@ public class RiaHomePage {
     }
 
     public RiaResultPage getResultPageByPrice(String price){
-        //priceFromInput.sendKeys(price);
+        priceFromInput.sendKeys(price);
         priceFromInput.click();
-        new Actions(getDriver()).sendKeys(price).perform();
-        //priceToInput.sendKeys(price);
+
+        priceToInput.sendKeys(price);
         priceToInput.click();
-        new Actions(getDriver()).sendKeys(price).perform();
+
         searchButton.submit();
 
         return new RiaResultPage();

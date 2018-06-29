@@ -1,6 +1,7 @@
 package com.epam.maxxxwell.test.utils;
 
 import org.apache.commons.io.FileUtils;
+import org.apache.log4j.Logger;
 import org.openqa.selenium.*;
 import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -10,6 +11,8 @@ import java.sql.Timestamp;
 
 public class Tools {
 
+    private static Logger Log = Logger.getLogger(Tools.class.getName());
+
     public static void makeScreenshot(WebDriver driver, String fileName) {
         try {
             File screenshot = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
@@ -17,12 +20,10 @@ public class Tools {
                     new File(".\\target\\screenshots\\"
                             + fileName + ".png"));
             Log.info("Screenshot taken at " + new Timestamp(System.currentTimeMillis()));
-            //System.out.println("Screenshot taken at " + new Timestamp(System.currentTimeMillis()));
         }
         catch (Exception e)
         {
             Log.error("Exception while taking screenshot "+e.getMessage());
-            //System.out.println("Exception while taking screenshot "+e.getMessage());
         }
     }
 
@@ -38,8 +39,7 @@ public class Tools {
             Log.info("Finish waiting");
         }
         catch (Throwable error) {
-            Log.error("Exception while taking screenshot " + error.getMessage());
-            //error.printStackTrace();
+            Log.error("Exception in wait for loading page method!" + error.getMessage());
         }
     }
 

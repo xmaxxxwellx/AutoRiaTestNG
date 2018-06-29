@@ -1,5 +1,6 @@
 package com.epam.maxxxwell.test;
 
+import org.apache.log4j.Logger;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
@@ -15,6 +16,8 @@ public class WebDriverContainer {
 
     private static Driver driverType;
     private static WebDriver driver = null;
+
+    private static Logger Log = Logger.getLogger(WebDriverContainer.class.getName());
 
     private WebDriverContainer(){
         // block constructor
@@ -41,6 +44,7 @@ public class WebDriverContainer {
             }
             driver.manage().window().maximize();
             driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+            Log.info("WebDriver created and managed.");
         }
         return driver;
     }
@@ -49,6 +53,7 @@ public class WebDriverContainer {
         if(driver != null){
             driver.quit();
             driver = null;
+            Log.info("WebDriver closed.");
         }
     }
 }

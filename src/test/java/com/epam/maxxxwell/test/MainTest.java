@@ -4,9 +4,6 @@ import io.qameta.allure.Flaky;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 import com.epam.maxxxwell.test.pages.*;
-import com.epam.maxxxwell.test.utils.*;
-
-import static com.epam.maxxxwell.test.WebDriverContainer.getDriver;
 
 public class MainTest extends ConfigTest {
 
@@ -18,7 +15,6 @@ public class MainTest extends ConfigTest {
     private static final int BIGGER_PRICE = 15000;
     private static final int EARLIER_YEAR = 2012;
     private static final int LATER_YEAR = 2015;
-    private static final String MAX_PRICE_VALUE = "100000000000000020000";
 
     @Test
     public void categorySelection(){
@@ -111,18 +107,5 @@ public class MainTest extends ConfigTest {
         RiaResultPage riaResultPage = riaHomePage.getResultPageByYear(LATER_YEAR, EARLIER_YEAR);
 
         Assert.assertEquals(riaResultPage.getResultsCount(), 0);
-    }
-
-    @Test
-    public void testingMaxPrice() {
-        RiaHomePage riaHomePage = new RiaHomePage();
-        riaHomePage.getResultPageByPrice(MAX_PRICE_VALUE);
-
-        Tools.waitPageToLoad(getDriver(), 30);
-
-        String testName = new Object() { }.getClass()
-                .getEnclosingMethod()
-                .getName();
-        Tools.makeScreenshot(getDriver(), testName);
     }
 }
