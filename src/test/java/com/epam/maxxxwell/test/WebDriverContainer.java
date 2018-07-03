@@ -1,5 +1,6 @@
 package com.epam.maxxxwell.test;
 
+import com.epam.maxxxwell.test.utils.ConfigProperties;
 import org.apache.log4j.Logger;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -30,20 +31,29 @@ public class WebDriverContainer {
     public static WebDriver getDriver() {
         if (driver == null) {
             switch (driverType) {
-                case Chrome:
+                case Chrome:{
+                    System.setProperty("webdriver.chrome.driver", ConfigProperties.getDriverPath("chrome"));
                     driver = new ChromeDriver();
                     break;
-                case Firefox:
+                }
+
+                case Firefox: {
+                    System.setProperty("webdriver.gecko.driver", ConfigProperties.getDriverPath("firefox"));
                     driver = new FirefoxDriver();
                     break;
-                case IE:
+                }
+                case IE: {
+                    System.setProperty("webdriver.ie.driver", ConfigProperties.getDriverPath("IE"));
                     driver = new InternetExplorerDriver();
                     break;
-                default:
+                }
+                default: {
+                    System.setProperty("webdriver.chrome.driver", ConfigProperties.getDriverPath("chrome"));
                     driver = new ChromeDriver();
+                }
             }
             driver.manage().window().maximize();
-            driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+            driver.manage().timeouts().implicitlyWait(ConfigProperties.getImplicitlyWait(), TimeUnit.SECONDS);
             Log.info("WebDriver created and managed.");
         }
         return driver;

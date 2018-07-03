@@ -1,9 +1,12 @@
 package com.epam.maxxxwell.test;
 
+import com.epam.maxxxwell.test.pages.RiaBrandPage;
+import com.epam.maxxxwell.test.pages.RiaHomePage;
+import com.epam.maxxxwell.test.pages.RiaProductPage;
+import com.epam.maxxxwell.test.pages.RiaResultPage;
 import io.qameta.allure.Flaky;
 import org.testng.Assert;
 import org.testng.annotations.Test;
-import com.epam.maxxxwell.test.pages.*;
 
 public class MainTest extends ConfigTest {
 

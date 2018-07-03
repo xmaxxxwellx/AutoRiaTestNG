@@ -1,6 +1,7 @@
 package com.epam.maxxxwell.test;
 
 
+import com.epam.maxxxwell.test.utils.ConfigProperties;
 import com.epam.maxxxwell.test.utils.Tools;
 import io.qameta.allure.Attachment;
 import org.apache.commons.io.FileUtils;
@@ -11,33 +12,26 @@ import org.testng.ITestResult;
 import org.testng.TestListenerAdapter;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.Optional;
-import org.testng.annotations.Parameters;
 
 import java.io.File;
 import java.io.IOException;
 import java.lang.reflect.Method;
 
-import static com.epam.maxxxwell.test.WebDriverContainer.getDriver;
-import static com.epam.maxxxwell.test.WebDriverContainer.quitDriver;
-import static com.epam.maxxxwell.test.WebDriverContainer.setDriver;
+import static com.epam.maxxxwell.test.WebDriverContainer.*;
 
 public class ConfigTest extends TestListenerAdapter {
 
     private Logger Log = Logger.getLogger(ConfigTest.class.getName());
     private File logFile = new File("log4j-Allure.log");
 
-    @Parameters({"baseURL",
-            "driverPass"})
     @BeforeMethod
-    public void setup(@Optional("https://auto.ria.com") String baseUrl,
-                      @Optional("\\drivers\\chromedriver.exe") String driverPass,
-                      Method method) {
-
-        System.setProperty("webdriver.chrome.driver", driverPass);
+    public void setup(Method method) {
 
         setDriver(WebDriverContainer.Driver.Chrome);
-        getDriver().get(baseUrl);
+        //setDriver(WebDriverContainer.Driver.Firefox);
+        //setDriver(WebDriverContainer.Driver.IE);
+
+        getDriver().get(ConfigProperties.getUrl());
 
         Log.info("BeforeTest setup method done!");
 
