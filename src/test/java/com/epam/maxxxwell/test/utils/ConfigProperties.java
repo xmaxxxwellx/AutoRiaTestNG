@@ -9,7 +9,7 @@ import java.util.Properties;
 public class ConfigProperties {
 
     private static final Properties properties;
-    private static File file = new File("src/main/resources/config.properties");
+    private static File file = new File("src/test/resources/config.properties");
     private static FileInputStream fileInputStream = null;
 
     static {
@@ -28,16 +28,16 @@ public class ConfigProperties {
         }
     }
 
-    public static String getDriverPath(String key){
+    public static String getDriverPath(){
         String driverPath = null;
-        switch (key){
+        switch (getParameter("browser")){
             case "chrome":
                 driverPath = properties.getProperty("chromeDriverPath");
                 break;
             case "firefox":
                 driverPath = properties.getProperty("firefoxDriverPath");
                 break;
-            case "IE":
+            case "ie":
                 driverPath = properties.getProperty("IEDriverPath");
                 break;
         }
@@ -68,5 +68,13 @@ public class ConfigProperties {
         else {
             throw new RuntimeException("url not specified in the Configuration.properties file.");
         }
+    }
+
+    public static String getParameter(String name) {
+        String value = System.getProperty(name);
+        if (value == null || value.isEmpty()) {
+            value = properties.getProperty(name);
+        }
+        return value;
     }
 }

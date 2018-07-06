@@ -27,10 +27,6 @@ public class ConfigTest extends TestListenerAdapter {
     @BeforeMethod
     public void setup(Method method) {
 
-        setDriver(WebDriverContainer.Driver.Chrome);
-        //setDriver(WebDriverContainer.Driver.Firefox);
-        //setDriver(WebDriverContainer.Driver.IE);
-
         getDriver().get(ConfigProperties.getUrl());
 
         Log.info("BeforeTest setup method done!");

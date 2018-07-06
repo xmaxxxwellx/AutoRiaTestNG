@@ -11,11 +11,6 @@ import java.util.concurrent.TimeUnit;
 
 public class WebDriverContainer {
 
-    public enum Driver{
-        Firefox, Chrome, IE
-    }
-
-    private static Driver driverType;
     private static WebDriver driver = null;
 
     private static Logger Log = Logger.getLogger(WebDriverContainer.class.getName());
@@ -24,31 +19,27 @@ public class WebDriverContainer {
         // block constructor
     }
 
-    public static void setDriver(Driver driverType){
-        WebDriverContainer.driverType = driverType;
-    }
-
     public static WebDriver getDriver() {
         if (driver == null) {
-            switch (driverType) {
-                case Chrome:{
-                    System.setProperty("webdriver.chrome.driver", ConfigProperties.getDriverPath("chrome"));
+            switch (ConfigProperties.getParameter("browser")) {
+                case "chrome":{
+                    System.setProperty("webdriver.chrome.driver", ConfigProperties.getDriverPath());
                     driver = new ChromeDriver();
                     break;
                 }
 
-                case Firefox: {
-                    System.setProperty("webdriver.gecko.driver", ConfigProperties.getDriverPath("firefox"));
+                case "firefox": {
+                    System.setProperty("webdriver.gecko.driver", ConfigProperties.getDriverPath());
                     driver = new FirefoxDriver();
                     break;
                 }
-                case IE: {
-                    System.setProperty("webdriver.ie.driver", ConfigProperties.getDriverPath("IE"));
+                case "ie": {
+                    System.setProperty("webdriver.ie.driver", ConfigProperties.getDriverPath());
                     driver = new InternetExplorerDriver();
                     break;
                 }
                 default: {
-                    System.setProperty("webdriver.chrome.driver", ConfigProperties.getDriverPath("chrome"));
+                    System.setProperty("webdriver.chrome.driver", ConfigProperties.getDriverPath());
                     driver = new ChromeDriver();
                 }
             }

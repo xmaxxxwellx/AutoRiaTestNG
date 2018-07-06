@@ -23,9 +23,9 @@ public class MainTest extends ConfigTest {
     public void categorySelection(){
         RiaHomePage riaHomePage = new RiaHomePage();
         RiaResultPage riaResultPage = riaHomePage.getResultPageByCategory(CATEGORY_NUMBER);
-
+        System.out.println("Hi");
         Assert.assertEquals(riaResultPage.getCategoryNumber(), CATEGORY_NUMBER,
-                "Result page does not match selected category: " + CATEGORY_NUMBER);
+                "We are not at selected category page");
     }
 
     @Test

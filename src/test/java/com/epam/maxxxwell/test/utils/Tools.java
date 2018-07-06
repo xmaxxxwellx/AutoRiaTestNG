@@ -4,10 +4,13 @@ import org.apache.commons.io.FileUtils;
 import org.apache.log4j.Logger;
 import org.openqa.selenium.*;
 import org.openqa.selenium.support.ui.ExpectedCondition;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.io.File;
 import java.sql.Timestamp;
+
+import static com.epam.maxxxwell.test.WebDriverContainer.getDriver;
 
 public class Tools {
 
@@ -46,5 +49,15 @@ public class Tools {
     public static WebElement dynamicElement(WebDriver driver, int seconds, By locator){
         return (new WebDriverWait(driver, seconds))
                 .until((ExpectedCondition<WebElement>) d -> d.findElement(locator));
+    }
+
+    public static void mayClick(WebElement element){
+        WebDriverWait wait = new WebDriverWait(getDriver(), ConfigProperties.getImplicitlyWait());
+        wait.until(ExpectedConditions.elementToBeClickable(element));
+    }
+
+    public static void waitForVisibility(By locator){
+        WebDriverWait wait = new WebDriverWait(getDriver(), ConfigProperties.getImplicitlyWait());
+        wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
     }
 }
