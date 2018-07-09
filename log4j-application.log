@@ -1305,3 +1305,336 @@ Session ID: f54cb79d-fa0e-4c1e-a8fd-2affb5ba56a7
 2018-07-06 13:05:29 INFO  ConfigTest:45 - -------======= Test "wrongRangeOfYearCheck" finished =======-------
 2018-07-06 13:05:30 INFO  WebDriverContainer:57 - WebDriver closed.
 2018-07-06 13:05:30 INFO  ConfigTest:48 - AfterTest cleanup method done!
+2018-07-09 10:18:03 INFO  WebDriverContainer:48 - WebDriver created and managed.
+2018-07-09 10:18:09 INFO  ConfigTest:32 - BeforeTest setup method done!
+2018-07-09 10:18:09 INFO  ConfigTest:34 - -------======= Test "returnToMainPageUsingLogo" started =======-------
+2018-07-09 10:18:16 INFO  ConfigTest:45 - -------======= Test "returnToMainPageUsingLogo" finished =======-------
+2018-07-09 10:18:21 INFO  WebDriverContainer:57 - WebDriver closed.
+2018-07-09 10:18:21 INFO  ConfigTest:48 - AfterTest cleanup method done!
+2018-07-09 10:23:15 INFO  WebDriverContainer:48 - WebDriver created and managed.
+2018-07-09 10:23:19 INFO  ConfigTest:32 - BeforeTest setup method done!
+2018-07-09 10:23:19 INFO  ConfigTest:34 - -------======= Test "returnToMainPageUsingLogo" started =======-------
+2018-07-09 10:23:26 INFO  ConfigTest:45 - -------======= Test "returnToMainPageUsingLogo" finished =======-------
+2018-07-09 10:23:29 INFO  WebDriverContainer:57 - WebDriver closed.
+2018-07-09 10:23:29 INFO  ConfigTest:48 - AfterTest cleanup method done!
+2018-07-09 10:24:50 INFO  WebDriverContainer:48 - WebDriver created and managed.
+2018-07-09 10:24:56 INFO  ConfigTest:32 - BeforeTest setup method done!
+2018-07-09 10:24:56 INFO  ConfigTest:34 - -------======= Test "returnToMainPageUsingLogo" started =======-------
+2018-07-09 10:24:58 INFO  Tools:25 - Screenshot taken at 2018-07-09 10:24:58.642
+2018-07-09 10:24:58 ERROR ConfigTest:41 - Test failure. Screenshot have been taken!
+2018-07-09 10:24:58 INFO  ConfigTest:56 - Screenshot have been added to Allure Report.
+2018-07-09 10:24:59 INFO  ConfigTest:45 - -------======= Test "returnToMainPageUsingLogo" finished =======-------
+2018-07-09 10:25:03 INFO  WebDriverContainer:57 - WebDriver closed.
+2018-07-09 10:25:03 INFO  ConfigTest:48 - AfterTest cleanup method done!
+2018-07-09 10:26:19 INFO  WebDriverContainer:48 - WebDriver created and managed.
+2018-07-09 10:26:24 INFO  ConfigTest:32 - BeforeTest setup method done!
+2018-07-09 10:26:24 INFO  ConfigTest:34 - -------======= Test "returnToMainPageUsingLogo" started =======-------
+2018-07-09 10:26:29 INFO  ConfigTest:45 - -------======= Test "returnToMainPageUsingLogo" finished =======-------
+2018-07-09 10:26:32 INFO  WebDriverContainer:57 - WebDriver closed.
+2018-07-09 10:26:32 INFO  ConfigTest:48 - AfterTest cleanup method done!
+2018-07-09 10:27:28 INFO  WebDriverContainer:48 - WebDriver created and managed.
+2018-07-09 10:27:36 INFO  ConfigTest:32 - BeforeTest setup method done!
+2018-07-09 10:27:36 INFO  ConfigTest:34 - -------======= Test "returnToMainPageUsingLogo" started =======-------
+2018-07-09 10:27:42 INFO  ConfigTest:45 - -------======= Test "returnToMainPageUsingLogo" finished =======-------
+2018-07-09 10:27:45 INFO  WebDriverContainer:57 - WebDriver closed.
+2018-07-09 10:27:45 INFO  ConfigTest:48 - AfterTest cleanup method done!
+2018-07-09 10:32:05 INFO  WebDriverContainer:48 - WebDriver created and managed.
+2018-07-09 10:32:10 INFO  ConfigTest:32 - BeforeTest setup method done!
+2018-07-09 10:32:10 INFO  ConfigTest:34 - -------======= Test "categorySelection" started =======-------
+2018-07-09 10:32:13 INFO  Tools:25 - Screenshot taken at 2018-07-09 10:32:13.845
+2018-07-09 10:32:13 ERROR ConfigTest:41 - Test failure. Screenshot have been taken!
+2018-07-09 10:32:13 INFO  ConfigTest:56 - Screenshot have been added to Allure Report.
+2018-07-09 10:32:14 INFO  ConfigTest:45 - -------======= Test "categorySelection" finished =======-------
+2018-07-09 10:32:18 INFO  WebDriverContainer:57 - WebDriver closed.
+2018-07-09 10:32:18 INFO  ConfigTest:48 - AfterTest cleanup method done!
+2018-07-09 10:32:25 INFO  WebDriverContainer:48 - WebDriver created and managed.
+2018-07-09 10:32:30 INFO  ConfigTest:32 - BeforeTest setup method done!
+2018-07-09 10:32:30 INFO  ConfigTest:34 - -------======= Test "checkingBrandCategorySelection" started =======-------
+2018-07-09 10:32:37 INFO  ConfigTest:45 - -------======= Test "checkingBrandCategorySelection" finished =======-------
+2018-07-09 10:32:39 INFO  WebDriverContainer:57 - WebDriver closed.
+2018-07-09 10:32:39 INFO  ConfigTest:48 - AfterTest cleanup method done!
+2018-07-09 10:32:47 INFO  WebDriverContainer:48 - WebDriver created and managed.
+2018-07-09 10:32:51 INFO  ConfigTest:32 - BeforeTest setup method done!
+2018-07-09 10:32:51 INFO  ConfigTest:34 - -------======= Test "findProductByPrice" started =======-------
+2018-07-09 10:32:55 INFO  Tools:25 - Screenshot taken at 2018-07-09 10:32:55.76
+2018-07-09 10:32:55 ERROR ConfigTest:41 - Test failure. Screenshot have been taken!
+2018-07-09 10:32:55 INFO  ConfigTest:56 - Screenshot have been added to Allure Report.
+2018-07-09 10:32:56 INFO  ConfigTest:45 - -------======= Test "findProductByPrice" finished =======-------
+2018-07-09 10:32:58 INFO  WebDriverContainer:57 - WebDriver closed.
+2018-07-09 10:32:58 INFO  ConfigTest:48 - AfterTest cleanup method done!
+2018-07-09 10:33:05 INFO  WebDriverContainer:48 - WebDriver created and managed.
+2018-07-09 10:33:10 INFO  ConfigTest:32 - BeforeTest setup method done!
+2018-07-09 10:33:10 INFO  ConfigTest:34 - -------======= Test "findProductByYear" started =======-------
+2018-07-09 10:33:15 INFO  ConfigTest:45 - -------======= Test "findProductByYear" finished =======-------
+2018-07-09 10:33:19 INFO  WebDriverContainer:57 - WebDriver closed.
+2018-07-09 10:33:19 INFO  ConfigTest:48 - AfterTest cleanup method done!
+2018-07-09 10:33:27 INFO  WebDriverContainer:48 - WebDriver created and managed.
+2018-07-09 10:33:32 INFO  ConfigTest:32 - BeforeTest setup method done!
+2018-07-09 10:33:32 INFO  ConfigTest:34 - -------======= Test "productOfChosenCategory" started =======-------
+2018-07-09 10:33:38 INFO  Tools:25 - Screenshot taken at 2018-07-09 10:33:38.745
+2018-07-09 10:33:38 ERROR ConfigTest:41 - Test failure. Screenshot have been taken!
+2018-07-09 10:33:38 INFO  ConfigTest:56 - Screenshot have been added to Allure Report.
+2018-07-09 10:33:38 INFO  ConfigTest:45 - -------======= Test "productOfChosenCategory" finished =======-------
+2018-07-09 10:33:41 INFO  WebDriverContainer:57 - WebDriver closed.
+2018-07-09 10:33:41 INFO  ConfigTest:48 - AfterTest cleanup method done!
+2018-07-09 10:33:48 INFO  WebDriverContainer:48 - WebDriver created and managed.
+2018-07-09 10:33:53 INFO  ConfigTest:32 - BeforeTest setup method done!
+2018-07-09 10:33:53 INFO  ConfigTest:34 - -------======= Test "regionSelection" started =======-------
+2018-07-09 10:33:54 INFO  ConfigTest:45 - -------======= Test "regionSelection" finished =======-------
+2018-07-09 10:33:56 INFO  WebDriverContainer:57 - WebDriver closed.
+2018-07-09 10:33:56 INFO  ConfigTest:48 - AfterTest cleanup method done!
+2018-07-09 10:34:04 INFO  WebDriverContainer:48 - WebDriver created and managed.
+2018-07-09 10:34:08 INFO  ConfigTest:32 - BeforeTest setup method done!
+2018-07-09 10:34:08 INFO  ConfigTest:34 - -------======= Test "returnToMainPageUsingLogo" started =======-------
+2018-07-09 10:34:12 INFO  ConfigTest:45 - -------======= Test "returnToMainPageUsingLogo" finished =======-------
+2018-07-09 10:34:16 INFO  WebDriverContainer:57 - WebDriver closed.
+2018-07-09 10:34:16 INFO  ConfigTest:48 - AfterTest cleanup method done!
+2018-07-09 10:34:24 INFO  WebDriverContainer:48 - WebDriver created and managed.
+2018-07-09 10:34:30 INFO  ConfigTest:32 - BeforeTest setup method done!
+2018-07-09 10:34:30 INFO  ConfigTest:34 - -------======= Test "wrongRangeOfPriceCheck" started =======-------
+2018-07-09 10:34:31 INFO  Tools:25 - Screenshot taken at 2018-07-09 10:34:31.482
+2018-07-09 10:34:31 ERROR ConfigTest:41 - Test failure. Screenshot have been taken!
+2018-07-09 10:34:31 INFO  ConfigTest:56 - Screenshot have been added to Allure Report.
+2018-07-09 10:34:31 INFO  ConfigTest:45 - -------======= Test "wrongRangeOfPriceCheck" finished =======-------
+2018-07-09 10:34:34 INFO  WebDriverContainer:57 - WebDriver closed.
+2018-07-09 10:34:34 INFO  ConfigTest:48 - AfterTest cleanup method done!
+2018-07-09 10:34:41 INFO  WebDriverContainer:48 - WebDriver created and managed.
+2018-07-09 10:34:46 INFO  ConfigTest:32 - BeforeTest setup method done!
+2018-07-09 10:34:46 INFO  ConfigTest:34 - -------======= Test "wrongRangeOfYearCheck" started =======-------
+2018-07-09 10:34:48 INFO  Tools:25 - Screenshot taken at 2018-07-09 10:34:48.718
+2018-07-09 10:34:48 ERROR ConfigTest:41 - Test failure. Screenshot have been taken!
+2018-07-09 10:34:48 INFO  ConfigTest:56 - Screenshot have been added to Allure Report.
+2018-07-09 10:34:48 INFO  ConfigTest:45 - -------======= Test "wrongRangeOfYearCheck" finished =======-------
+2018-07-09 10:34:50 INFO  WebDriverContainer:57 - WebDriver closed.
+2018-07-09 10:34:50 INFO  ConfigTest:48 - AfterTest cleanup method done!
+2018-07-09 10:36:26 INFO  WebDriverContainer:48 - WebDriver created and managed.
+2018-07-09 10:36:29 INFO  ConfigTest:32 - BeforeTest setup method done!
+2018-07-09 10:36:29 INFO  ConfigTest:34 - -------======= Test "categorySelection" started =======-------
+2018-07-09 10:36:35 INFO  ConfigTest:45 - -------======= Test "categorySelection" finished =======-------
+2018-07-09 10:36:36 INFO  WebDriverContainer:57 - WebDriver closed.
+2018-07-09 10:36:36 INFO  ConfigTest:48 - AfterTest cleanup method done!
+2018-07-09 10:36:39 INFO  WebDriverContainer:48 - WebDriver created and managed.
+2018-07-09 10:36:43 INFO  ConfigTest:32 - BeforeTest setup method done!
+2018-07-09 10:36:43 INFO  ConfigTest:34 - -------======= Test "checkingBrandCategorySelection" started =======-------
+2018-07-09 10:36:50 INFO  ConfigTest:45 - -------======= Test "checkingBrandCategorySelection" finished =======-------
+2018-07-09 10:36:51 INFO  WebDriverContainer:57 - WebDriver closed.
+2018-07-09 10:36:51 INFO  ConfigTest:48 - AfterTest cleanup method done!
+2018-07-09 10:36:55 INFO  WebDriverContainer:48 - WebDriver created and managed.
+2018-07-09 10:36:58 INFO  ConfigTest:32 - BeforeTest setup method done!
+2018-07-09 10:36:58 INFO  ConfigTest:34 - -------======= Test "findProductByPrice" started =======-------
+2018-07-09 10:37:06 INFO  Tools:25 - Screenshot taken at 2018-07-09 10:37:06.496
+2018-07-09 10:37:06 ERROR ConfigTest:41 - Test failure. Screenshot have been taken!
+2018-07-09 10:37:06 INFO  ConfigTest:56 - Screenshot have been added to Allure Report.
+2018-07-09 10:37:07 INFO  ConfigTest:45 - -------======= Test "findProductByPrice" finished =======-------
+2018-07-09 10:37:08 INFO  WebDriverContainer:57 - WebDriver closed.
+2018-07-09 10:37:08 INFO  ConfigTest:48 - AfterTest cleanup method done!
+2018-07-09 10:37:11 INFO  WebDriverContainer:48 - WebDriver created and managed.
+2018-07-09 10:37:15 INFO  ConfigTest:32 - BeforeTest setup method done!
+2018-07-09 10:37:15 INFO  ConfigTest:34 - -------======= Test "findProductByYear" started =======-------
+2018-07-09 10:37:23 INFO  ConfigTest:45 - -------======= Test "findProductByYear" finished =======-------
+2018-07-09 10:37:24 INFO  WebDriverContainer:57 - WebDriver closed.
+2018-07-09 10:37:24 INFO  ConfigTest:48 - AfterTest cleanup method done!
+2018-07-09 10:37:27 INFO  WebDriverContainer:48 - WebDriver created and managed.
+2018-07-09 10:37:31 INFO  ConfigTest:32 - BeforeTest setup method done!
+2018-07-09 10:37:31 INFO  ConfigTest:34 - -------======= Test "productOfChosenCategory" started =======-------
+2018-07-09 10:37:38 INFO  ConfigTest:45 - -------======= Test "productOfChosenCategory" finished =======-------
+2018-07-09 10:37:39 INFO  WebDriverContainer:57 - WebDriver closed.
+2018-07-09 10:37:39 INFO  ConfigTest:48 - AfterTest cleanup method done!
+2018-07-09 10:37:43 INFO  WebDriverContainer:48 - WebDriver created and managed.
+2018-07-09 10:37:46 INFO  ConfigTest:32 - BeforeTest setup method done!
+2018-07-09 10:37:46 INFO  ConfigTest:34 - -------======= Test "regionSelection" started =======-------
+2018-07-09 10:37:50 INFO  ConfigTest:45 - -------======= Test "regionSelection" finished =======-------
+2018-07-09 10:37:51 INFO  WebDriverContainer:57 - WebDriver closed.
+2018-07-09 10:37:51 INFO  ConfigTest:48 - AfterTest cleanup method done!
+2018-07-09 10:37:55 INFO  WebDriverContainer:48 - WebDriver created and managed.
+2018-07-09 10:37:58 INFO  ConfigTest:32 - BeforeTest setup method done!
+2018-07-09 10:37:58 INFO  ConfigTest:34 - -------======= Test "returnToMainPageUsingLogo" started =======-------
+2018-07-09 10:38:04 INFO  ConfigTest:45 - -------======= Test "returnToMainPageUsingLogo" finished =======-------
+2018-07-09 10:38:05 INFO  WebDriverContainer:57 - WebDriver closed.
+2018-07-09 10:38:05 INFO  ConfigTest:48 - AfterTest cleanup method done!
+2018-07-09 10:38:08 INFO  WebDriverContainer:48 - WebDriver created and managed.
+2018-07-09 10:38:22 INFO  ConfigTest:32 - BeforeTest setup method done!
+2018-07-09 10:38:22 INFO  ConfigTest:34 - -------======= Test "wrongRangeOfPriceCheck" started =======-------
+2018-07-09 10:38:26 INFO  ConfigTest:45 - -------======= Test "wrongRangeOfPriceCheck" finished =======-------
+2018-07-09 10:38:27 INFO  WebDriverContainer:57 - WebDriver closed.
+2018-07-09 10:38:27 INFO  ConfigTest:48 - AfterTest cleanup method done!
+2018-07-09 10:38:30 INFO  WebDriverContainer:48 - WebDriver created and managed.
+2018-07-09 10:38:35 INFO  ConfigTest:32 - BeforeTest setup method done!
+2018-07-09 10:38:35 INFO  ConfigTest:34 - -------======= Test "wrongRangeOfYearCheck" started =======-------
+2018-07-09 10:38:42 INFO  Tools:25 - Screenshot taken at 2018-07-09 10:38:42.168
+2018-07-09 10:38:42 ERROR ConfigTest:41 - Test failure. Screenshot have been taken!
+2018-07-09 10:38:42 INFO  ConfigTest:56 - Screenshot have been added to Allure Report.
+2018-07-09 10:38:42 INFO  ConfigTest:45 - -------======= Test "wrongRangeOfYearCheck" finished =======-------
+2018-07-09 10:38:43 INFO  WebDriverContainer:57 - WebDriver closed.
+2018-07-09 10:38:43 INFO  ConfigTest:48 - AfterTest cleanup method done!
+2018-07-09 10:42:17 INFO  WebDriverContainer:48 - WebDriver created and managed.
+2018-07-09 10:42:21 INFO  ConfigTest:32 - BeforeTest setup method done!
+2018-07-09 10:42:21 INFO  ConfigTest:34 - -------======= Test "findProductByPrice" started =======-------
+2018-07-09 10:42:29 INFO  Tools:25 - Screenshot taken at 2018-07-09 10:42:29.854
+2018-07-09 10:42:29 ERROR ConfigTest:41 - Test failure. Screenshot have been taken!
+2018-07-09 10:42:29 INFO  ConfigTest:56 - Screenshot have been added to Allure Report.
+2018-07-09 10:42:30 INFO  ConfigTest:45 - -------======= Test "findProductByPrice" finished =======-------
+2018-07-09 10:42:31 INFO  WebDriverContainer:57 - WebDriver closed.
+2018-07-09 10:42:31 INFO  ConfigTest:48 - AfterTest cleanup method done!
+2018-07-09 10:44:29 INFO  WebDriverContainer:48 - WebDriver created and managed.
+2018-07-09 10:44:32 INFO  ConfigTest:32 - BeforeTest setup method done!
+2018-07-09 10:44:32 INFO  ConfigTest:34 - -------======= Test "findProductByPrice" started =======-------
+2018-07-09 10:47:17 INFO  WebDriverContainer:48 - WebDriver created and managed.
+2018-07-09 10:47:21 INFO  ConfigTest:32 - BeforeTest setup method done!
+2018-07-09 10:47:21 INFO  ConfigTest:34 - -------======= Test "findProductByPrice" started =======-------
+2018-07-09 11:22:57 INFO  WebDriverContainer:48 - WebDriver created and managed.
+2018-07-09 11:23:01 INFO  ConfigTest:32 - BeforeTest setup method done!
+2018-07-09 11:23:01 INFO  ConfigTest:34 - -------======= Test "regionSelection" started =======-------
+2018-07-09 11:23:07 INFO  ConfigTest:45 - -------======= Test "regionSelection" finished =======-------
+2018-07-09 11:23:08 INFO  WebDriverContainer:57 - WebDriver closed.
+2018-07-09 11:23:08 INFO  ConfigTest:48 - AfterTest cleanup method done!
+2018-07-09 11:23:12 INFO  WebDriverContainer:48 - WebDriver created and managed.
+2018-07-09 11:23:15 INFO  ConfigTest:32 - BeforeTest setup method done!
+2018-07-09 11:23:15 INFO  ConfigTest:34 - -------======= Test "regionSelection" started =======-------
+2018-07-09 11:23:20 INFO  ConfigTest:45 - -------======= Test "regionSelection" finished =======-------
+2018-07-09 11:23:21 INFO  WebDriverContainer:57 - WebDriver closed.
+2018-07-09 11:23:21 INFO  ConfigTest:48 - AfterTest cleanup method done!
+2018-07-09 11:26:36 INFO  WebDriverContainer:48 - WebDriver created and managed.
+2018-07-09 11:26:40 INFO  ConfigTest:32 - BeforeTest setup method done!
+2018-07-09 11:26:40 INFO  ConfigTest:34 - -------======= Test "regionSelection" started =======-------
+2018-07-09 11:26:45 INFO  ConfigTest:45 - -------======= Test "regionSelection" finished =======-------
+2018-07-09 11:26:46 INFO  WebDriverContainer:57 - WebDriver closed.
+2018-07-09 11:26:46 INFO  ConfigTest:48 - AfterTest cleanup method done!
+2018-07-09 11:26:50 INFO  WebDriverContainer:48 - WebDriver created and managed.
+2018-07-09 11:26:53 INFO  ConfigTest:32 - BeforeTest setup method done!
+2018-07-09 11:26:53 INFO  ConfigTest:34 - -------======= Test "regionSelection" started =======-------
+2018-07-09 11:26:58 INFO  ConfigTest:45 - -------======= Test "regionSelection" finished =======-------
+2018-07-09 11:26:59 INFO  WebDriverContainer:57 - WebDriver closed.
+2018-07-09 11:26:59 INFO  ConfigTest:48 - AfterTest cleanup method done!
+2018-07-09 11:32:26 INFO  WebDriverContainer:48 - WebDriver created and managed.
+2018-07-09 11:32:30 INFO  ConfigTest:32 - BeforeTest setup method done!
+2018-07-09 11:32:30 INFO  ConfigTest:34 - -------======= Test "checkingBrandCategorySelection" started =======-------
+2018-07-09 11:32:38 INFO  ConfigTest:45 - -------======= Test "checkingBrandCategorySelection" finished =======-------
+2018-07-09 11:32:39 INFO  WebDriverContainer:57 - WebDriver closed.
+2018-07-09 11:32:39 INFO  ConfigTest:48 - AfterTest cleanup method done!
+2018-07-09 11:32:43 INFO  WebDriverContainer:48 - WebDriver created and managed.
+2018-07-09 11:32:46 INFO  ConfigTest:32 - BeforeTest setup method done!
+2018-07-09 11:32:46 INFO  ConfigTest:34 - -------======= Test "checkingBrandCategorySelection" started =======-------
+2018-07-09 11:32:52 INFO  ConfigTest:45 - -------======= Test "checkingBrandCategorySelection" finished =======-------
+2018-07-09 11:32:54 INFO  WebDriverContainer:57 - WebDriver closed.
+2018-07-09 11:32:54 INFO  ConfigTest:48 - AfterTest cleanup method done!
+2018-07-09 11:44:20 INFO  WebDriverContainer:48 - WebDriver created and managed.
+2018-07-09 11:44:34 INFO  ConfigTest:32 - BeforeTest setup method done!
+2018-07-09 11:44:34 INFO  ConfigTest:34 - -------======= Test "categorySelection" started =======-------
+2018-07-09 11:44:39 INFO  ConfigTest:45 - -------======= Test "categorySelection" finished =======-------
+2018-07-09 11:44:40 INFO  WebDriverContainer:57 - WebDriver closed.
+2018-07-09 11:44:40 INFO  ConfigTest:48 - AfterTest cleanup method done!
+2018-07-09 11:44:43 INFO  WebDriverContainer:48 - WebDriver created and managed.
+2018-07-09 11:44:47 INFO  ConfigTest:32 - BeforeTest setup method done!
+2018-07-09 11:44:47 INFO  ConfigTest:34 - -------======= Test "categorySelection" started =======-------
+2018-07-09 11:44:52 INFO  ConfigTest:45 - -------======= Test "categorySelection" finished =======-------
+2018-07-09 11:44:53 INFO  WebDriverContainer:57 - WebDriver closed.
+2018-07-09 11:44:53 INFO  ConfigTest:48 - AfterTest cleanup method done!
+2018-07-09 11:44:57 INFO  WebDriverContainer:48 - WebDriver created and managed.
+2018-07-09 11:45:00 INFO  ConfigTest:32 - BeforeTest setup method done!
+2018-07-09 11:45:00 INFO  ConfigTest:34 - -------======= Test "categorySelection" started =======-------
+2018-07-09 11:45:05 INFO  ConfigTest:45 - -------======= Test "categorySelection" finished =======-------
+2018-07-09 11:45:06 INFO  WebDriverContainer:57 - WebDriver closed.
+2018-07-09 11:45:06 INFO  ConfigTest:48 - AfterTest cleanup method done!
+2018-07-09 11:45:09 INFO  WebDriverContainer:48 - WebDriver created and managed.
+2018-07-09 11:45:13 INFO  ConfigTest:32 - BeforeTest setup method done!
+2018-07-09 11:45:13 INFO  ConfigTest:34 - -------======= Test "checkingBrandCategorySelection" started =======-------
+2018-07-09 11:45:20 INFO  ConfigTest:45 - -------======= Test "checkingBrandCategorySelection" finished =======-------
+2018-07-09 11:45:21 INFO  WebDriverContainer:57 - WebDriver closed.
+2018-07-09 11:45:21 INFO  ConfigTest:48 - AfterTest cleanup method done!
+2018-07-09 11:45:25 INFO  WebDriverContainer:48 - WebDriver created and managed.
+2018-07-09 11:45:28 INFO  ConfigTest:32 - BeforeTest setup method done!
+2018-07-09 11:45:28 INFO  ConfigTest:34 - -------======= Test "checkingBrandCategorySelection" started =======-------
+2018-07-09 11:45:42 INFO  ConfigTest:45 - -------======= Test "checkingBrandCategorySelection" finished =======-------
+2018-07-09 11:45:43 INFO  WebDriverContainer:57 - WebDriver closed.
+2018-07-09 11:45:43 INFO  ConfigTest:48 - AfterTest cleanup method done!
+2018-07-09 11:45:47 INFO  WebDriverContainer:48 - WebDriver created and managed.
+2018-07-09 11:45:50 INFO  ConfigTest:32 - BeforeTest setup method done!
+2018-07-09 11:45:50 INFO  ConfigTest:34 - -------======= Test "findProductByPrice" started =======-------
+2018-07-09 11:45:58 INFO  ConfigTest:45 - -------======= Test "findProductByPrice" finished =======-------
+2018-07-09 11:45:59 INFO  WebDriverContainer:57 - WebDriver closed.
+2018-07-09 11:45:59 INFO  ConfigTest:48 - AfterTest cleanup method done!
+2018-07-09 11:46:03 INFO  WebDriverContainer:48 - WebDriver created and managed.
+2018-07-09 11:46:06 INFO  ConfigTest:32 - BeforeTest setup method done!
+2018-07-09 11:46:06 INFO  ConfigTest:34 - -------======= Test "findProductByPrice" started =======-------
+2018-07-09 11:46:13 INFO  ConfigTest:45 - -------======= Test "findProductByPrice" finished =======-------
+2018-07-09 11:46:14 INFO  WebDriverContainer:57 - WebDriver closed.
+2018-07-09 11:46:14 INFO  ConfigTest:48 - AfterTest cleanup method done!
+2018-07-09 11:46:17 INFO  WebDriverContainer:48 - WebDriver created and managed.
+2018-07-09 11:46:21 INFO  ConfigTest:32 - BeforeTest setup method done!
+2018-07-09 11:46:21 INFO  ConfigTest:34 - -------======= Test "findProductByYear" started =======-------
+2018-07-09 11:46:29 INFO  ConfigTest:45 - -------======= Test "findProductByYear" finished =======-------
+2018-07-09 11:46:30 INFO  WebDriverContainer:57 - WebDriver closed.
+2018-07-09 11:46:30 INFO  ConfigTest:48 - AfterTest cleanup method done!
+2018-07-09 11:46:33 INFO  WebDriverContainer:48 - WebDriver created and managed.
+2018-07-09 11:46:47 INFO  ConfigTest:32 - BeforeTest setup method done!
+2018-07-09 11:46:47 INFO  ConfigTest:34 - -------======= Test "findProductByYear" started =======-------
+2018-07-09 11:46:55 INFO  ConfigTest:45 - -------======= Test "findProductByYear" finished =======-------
+2018-07-09 11:46:56 INFO  WebDriverContainer:57 - WebDriver closed.
+2018-07-09 11:46:56 INFO  ConfigTest:48 - AfterTest cleanup method done!
+2018-07-09 11:46:59 INFO  WebDriverContainer:48 - WebDriver created and managed.
+2018-07-09 11:47:03 INFO  ConfigTest:32 - BeforeTest setup method done!
+2018-07-09 11:47:03 INFO  ConfigTest:34 - -------======= Test "productOfChosenCategory" started =======-------
+2018-07-09 11:47:10 INFO  ConfigTest:45 - -------======= Test "productOfChosenCategory" finished =======-------
+2018-07-09 11:47:11 INFO  WebDriverContainer:57 - WebDriver closed.
+2018-07-09 11:47:11 INFO  ConfigTest:48 - AfterTest cleanup method done!
+2018-07-09 11:47:15 INFO  WebDriverContainer:48 - WebDriver created and managed.
+2018-07-09 11:47:19 INFO  ConfigTest:32 - BeforeTest setup method done!
+2018-07-09 11:47:19 INFO  ConfigTest:34 - -------======= Test "productOfChosenCategory" started =======-------
+2018-07-09 11:47:27 INFO  ConfigTest:45 - -------======= Test "productOfChosenCategory" finished =======-------
+2018-07-09 11:47:28 INFO  WebDriverContainer:57 - WebDriver closed.
+2018-07-09 11:47:28 INFO  ConfigTest:48 - AfterTest cleanup method done!
+2018-07-09 11:47:31 INFO  WebDriverContainer:48 - WebDriver created and managed.
+2018-07-09 11:47:35 INFO  ConfigTest:32 - BeforeTest setup method done!
+2018-07-09 11:47:35 INFO  ConfigTest:34 - -------======= Test "productOfChosenCategory" started =======-------
+2018-07-09 11:47:42 INFO  ConfigTest:45 - -------======= Test "productOfChosenCategory" finished =======-------
+2018-07-09 11:47:43 INFO  WebDriverContainer:57 - WebDriver closed.
+2018-07-09 11:47:43 INFO  ConfigTest:48 - AfterTest cleanup method done!
+2018-07-09 11:47:46 INFO  WebDriverContainer:48 - WebDriver created and managed.
+2018-07-09 11:47:50 INFO  ConfigTest:32 - BeforeTest setup method done!
+2018-07-09 11:47:50 INFO  ConfigTest:34 - -------======= Test "regionSelection" started =======-------
+2018-07-09 11:47:54 INFO  ConfigTest:45 - -------======= Test "regionSelection" finished =======-------
+2018-07-09 11:47:55 INFO  WebDriverContainer:57 - WebDriver closed.
+2018-07-09 11:47:55 INFO  ConfigTest:48 - AfterTest cleanup method done!
+2018-07-09 11:47:59 INFO  WebDriverContainer:48 - WebDriver created and managed.
+2018-07-09 11:48:02 INFO  ConfigTest:32 - BeforeTest setup method done!
+2018-07-09 11:48:02 INFO  ConfigTest:34 - -------======= Test "regionSelection" started =======-------
+2018-07-09 11:48:08 INFO  ConfigTest:45 - -------======= Test "regionSelection" finished =======-------
+2018-07-09 11:48:09 INFO  WebDriverContainer:57 - WebDriver closed.
+2018-07-09 11:48:09 INFO  ConfigTest:48 - AfterTest cleanup method done!
+2018-07-09 11:48:13 INFO  WebDriverContainer:48 - WebDriver created and managed.
+2018-07-09 11:48:16 INFO  ConfigTest:32 - BeforeTest setup method done!
+2018-07-09 11:48:16 INFO  ConfigTest:34 - -------======= Test "returnToMainPageUsingLogo" started =======-------
+2018-07-09 11:48:22 INFO  ConfigTest:45 - -------======= Test "returnToMainPageUsingLogo" finished =======-------
+2018-07-09 11:48:23 INFO  WebDriverContainer:57 - WebDriver closed.
+2018-07-09 11:48:23 INFO  ConfigTest:48 - AfterTest cleanup method done!
+2018-07-09 11:48:26 INFO  WebDriverContainer:48 - WebDriver created and managed.
+2018-07-09 11:48:30 INFO  ConfigTest:32 - BeforeTest setup method done!
+2018-07-09 11:48:30 INFO  ConfigTest:34 - -------======= Test "wrongRangeOfPriceCheck" started =======-------
+2018-07-09 11:48:34 INFO  ConfigTest:45 - -------======= Test "wrongRangeOfPriceCheck" finished =======-------
+2018-07-09 11:48:35 INFO  WebDriverContainer:57 - WebDriver closed.
+2018-07-09 11:48:35 INFO  ConfigTest:48 - AfterTest cleanup method done!
+2018-07-09 11:48:38 INFO  WebDriverContainer:48 - WebDriver created and managed.
+2018-07-09 11:48:42 INFO  ConfigTest:32 - BeforeTest setup method done!
+2018-07-09 11:48:42 INFO  ConfigTest:34 - -------======= Test "wrongRangeOfPriceCheck" started =======-------
+2018-07-09 11:48:46 INFO  ConfigTest:45 - -------======= Test "wrongRangeOfPriceCheck" finished =======-------
+2018-07-09 11:48:47 INFO  WebDriverContainer:57 - WebDriver closed.
+2018-07-09 11:48:47 INFO  ConfigTest:48 - AfterTest cleanup method done!
+2018-07-09 11:48:50 INFO  WebDriverContainer:48 - WebDriver created and managed.
+2018-07-09 11:48:54 INFO  ConfigTest:32 - BeforeTest setup method done!
+2018-07-09 11:48:54 INFO  ConfigTest:34 - -------======= Test "wrongRangeOfYearCheck" started =======-------
+2018-07-09 11:48:59 INFO  Tools:25 - Screenshot taken at 2018-07-09 11:48:59.577
+2018-07-09 11:48:59 ERROR ConfigTest:41 - Test failure. Screenshot have been taken!
+2018-07-09 11:48:59 INFO  ConfigTest:56 - Screenshot have been added to Allure Report.
+2018-07-09 11:48:59 INFO  ConfigTest:45 - -------======= Test "wrongRangeOfYearCheck" finished =======-------
+2018-07-09 11:49:00 INFO  WebDriverContainer:57 - WebDriver closed.
+2018-07-09 11:49:00 INFO  ConfigTest:48 - AfterTest cleanup method done!
+2018-07-09 11:49:04 INFO  WebDriverContainer:48 - WebDriver created and managed.
+2018-07-09 11:49:07 INFO  ConfigTest:32 - BeforeTest setup method done!
+2018-07-09 11:49:07 INFO  ConfigTest:34 - -------======= Test "wrongRangeOfYearCheck" started =======-------
+2018-07-09 11:49:13 INFO  Tools:25 - Screenshot taken at 2018-07-09 11:49:13.094
+2018-07-09 11:49:13 ERROR ConfigTest:41 - Test failure. Screenshot have been taken!
+2018-07-09 11:49:13 INFO  ConfigTest:56 - Screenshot have been added to Allure Report.
+2018-07-09 11:49:13 INFO  ConfigTest:45 - -------======= Test "wrongRangeOfYearCheck" finished =======-------
+2018-07-09 11:49:14 INFO  WebDriverContainer:57 - WebDriver closed.
+2018-07-09 11:49:14 INFO  ConfigTest:48 - AfterTest cleanup method done!
