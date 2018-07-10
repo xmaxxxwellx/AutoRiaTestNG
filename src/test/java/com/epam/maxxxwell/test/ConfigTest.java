@@ -22,7 +22,7 @@ import static com.epam.maxxxwell.test.WebDriverContainer.*;
 public class ConfigTest extends TestListenerAdapter {
 
     private Logger Log = Logger.getLogger(ConfigTest.class.getName());
-    private File logFile = new File("log4j-Allure.log");
+    private File logFile = new File("target/logs/log4j-Allure.log");
 
     @BeforeMethod
     public void setup(Method method) {
@@ -48,7 +48,7 @@ public class ConfigTest extends TestListenerAdapter {
         Log.info("AfterTest cleanup method done!");
 
         appendLogToAllure(logFile);
-        FileUtils.write(new File("log4j-Allure.log"), "");
+        FileUtils.write(new File("target/logs/log4j-Allure.log"), "");
     }
 
     @Attachment(value = "Page screenshot", type = "image/png")
